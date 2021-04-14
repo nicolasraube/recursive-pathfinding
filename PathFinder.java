@@ -44,7 +44,7 @@ public class PathFinder {
 		return new char[0];
 	}
 
-	public static boolean findInstructions(int[][] playground, int x, int y, int direction, int blocks, int findX, int findY, char[] instructions) {
+	private static boolean findInstructions(int[][] playground, int x, int y, int direction, int blocks, int findX, int findY, char[] instructions) {
 		Board board = new Board(playground);
 		Player player = new Player(x, y, direction, blocks);
 		Point targetPos = new Point(findX, findY);
